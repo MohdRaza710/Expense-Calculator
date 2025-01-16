@@ -3,6 +3,7 @@ import { ExpenseProvider } from './context'
 import  ExpenseForm  from './Components/ExpenseForm'
 import  ExpenseItem  from './Components/ExpenseItem'
 function App() {
+    console.log(import.meta.env.VITE_EXAMPLE)
     const [expenses, setExpenses] = useState([])
 
     const addExpense = (expense) => {
