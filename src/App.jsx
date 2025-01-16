@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { ExpenseProvider } from './context/ExpenseContext'
+import { ExpenseProvider } from './Context'
 import  ExpenseForm  from './Components/ExpenseForm'
 import  ExpenseItem  from './Components/ExpenseItem'
 function App() {
