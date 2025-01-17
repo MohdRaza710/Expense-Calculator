@@ -4,7 +4,7 @@ import { useExpense } from '../Context/ExpenseContext';
 function ExpenseForm() {
     const [expense, setExpense] = useState('')
     const [budget, setBudget] = useState('')
-    const [ amount, setAmount ] = useState(0);
+    const [amount, setAmount] = useState('');
     const [date, setDate] = useState('');
     const { addExpense } = useExpense();
 
@@ -24,6 +24,7 @@ function ExpenseForm() {
                 <h1>Expense Calculator</h1>
                 <form onSubmit={add}>
                     <input
+                        placeholder='Add Date'
                         type="date"
                         className="w-full border border-black/10 rounded-lg px-3 outline-none duration-150 bg-white/20 py-1.5"
                         value={date}
@@ -59,9 +60,9 @@ function ExpenseForm() {
                     name='budget'
                     onChange={(e) => setBudget(e.target.value)}
                     required />
-                budget:{amount} <br />
+                budget: {budget} <br />
                 Total Expense: {budget - amount} <br />
-                Amount Left: {amount - budget}
+                Amount Left: {amount -Math.floor(budget) }
             </div>
 
         </>

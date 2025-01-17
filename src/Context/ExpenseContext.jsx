@@ -9,7 +9,9 @@ export const ExpenseContext= createContext({
         }
     ],
     addExpense: (expense) => {},
+    updateExpense: (id, expense) => {},
     removeExpense: (id) => {},
+    toggleComplete: (id) => {}
 })
 
 
