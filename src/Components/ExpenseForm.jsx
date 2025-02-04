@@ -64,6 +64,13 @@ function ExpenseForm() {
                 Total Expense: {budget - amount} <br />
                 Amount Left: {amount -Math.floor(budget) }
             </div>
+            <div>
+                <button className='bg-neutral-700 text-black border border-black rounded-lg font-medium'><a href="IncomeForm.jsx">Income Calculator</a></button>
+            </div>
+
+            <div>
+                <button className='bg-neutral-700 text-black border border-black rounded-lg font-medium'><a href="ExpenseForm.jsx">Expense Calculator</a></button>
+            </div>
 
         </>
     )

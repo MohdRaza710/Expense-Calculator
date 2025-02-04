@@ -71,7 +71,8 @@ function ExpenseItem({ expense }) {
                     ❌
                 </button>
             </div>
-        </div>
+            
+        </div> 
     );
 }
 
